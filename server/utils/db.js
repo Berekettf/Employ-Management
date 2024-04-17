@@ -3,7 +3,7 @@ import mysql from 'mysql';
 const con = mysql.createConnection({
   host: 'localhost',
   user: 'root', // The correct property name is 'user', not 'root'
-  password: 'Mys3060100', // Replace with your MySQL password
+  password: 'root1234', // Replace with your MySQL password
   database: 'employee'
 });
 
