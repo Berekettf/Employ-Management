@@ -4,19 +4,18 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import axios from "axios";
 
 const Dashboard = () => {
-  const anvigate = useNavigate()
-  axios.defaults.withCredentials = true
+  const navigate = useNavigate();
+  axios.defaults.withCredentials = true;
   const handleLogout = () => {
-    axios.get('http://localhost:3000/auth/logout')
-    .then(result => {
-      if(result.data.Status) { 
-        localStorage.removeItem("valid")
-        anvigate('/')
+    axios.get("http://localhost:3000/auth/logout").then((result) => {
+      if (result.data.Status) {
+        localStorage.removeItem("valid");
+        navigate("/");
       }
-    })
-  }
+    });
+  };
+
   return (
-<<<<<<< HEAD
     <div className="container-fluid">
       <div className="row flex-nowrap">
         <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
@@ -72,9 +71,7 @@ const Dashboard = () => {
                 </Link>
               </li>
               <li className="w-100" onClick={handleLogout}>
-              <Link
-                  className="nav-link px-0 align-middle text-white"
-                >
+                <Link className="nav-link px-0 align-middle text-white">
                   <i className="fs-4 bi-power ms-2"></i>
                   <span className="ms-2 d-none d-sm-inline">Logout</span>
                 </Link>
@@ -83,16 +80,12 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="col p-0 m-0">
-            <div className="p-2 d-flex justify-content-center shadow">
-                <h4>Emoployee Management System</h4>
-            </div>
-            <Outlet />
+          <div className="p-2 d-flex justify-content-center shadow">
+            <h4>Employee Management System</h4>
+          </div>
+          <Outlet />
         </div>
       </div>
-=======
-    <div>
-      welcome to dashboard
->>>>>>> 031d062ebfcf9d5ae633c6853ae78870d81bf98f
     </div>
   );
 };
