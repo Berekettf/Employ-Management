@@ -9,12 +9,16 @@ app.use(cors({
     credentials: true
 }))
 app.use(express.json())
+<<<<<<< HEAD
 
 
 app.use('/auth', adminRouter);
 
+=======
+>>>>>>> 031d062ebfcf9d5ae633c6853ae78870d81bf98f
 
 
+app.use('/auth', adminRouter);
 
 app.listen(8000, ()=>{
     console.log('server is running')

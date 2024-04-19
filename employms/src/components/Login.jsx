@@ -1,7 +1,12 @@
 import React, {useState} from 'react'
 import './style.css'
+<<<<<<< HEAD
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+=======
+import axios from 'react-router-dom'
+// login component
+>>>>>>> 031d062ebfcf9d5ae633c6853ae78870d81bf98f
 
 
 

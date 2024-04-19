@@ -16,6 +16,7 @@ const Dashboard = () => {
     })
   }
   return (
+<<<<<<< HEAD
     <div className="container-fluid">
       <div className="row flex-nowrap">
         <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
@@ -88,6 +89,10 @@ const Dashboard = () => {
             <Outlet />
         </div>
       </div>
+=======
+    <div>
+      welcome to dashboard
+>>>>>>> 031d062ebfcf9d5ae633c6853ae78870d81bf98f
     </div>
   );
 };

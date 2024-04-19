@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import mysql from 'mysql';
 
 const con = mysql.createConnection({
@@ -16,3 +17,23 @@ con.connect(function(err) {
 });
 
 export default con;
+=======
+import mysql from 'mysql';
+
+const con = mysql.createConnection({
+  host: 'localhost',
+  user: 'root', // The correct property name is 'user', not 'root'
+  password: 'root1234', // Replace with your MySQL password
+  database: 'employee'
+});
+
+con.connect(function(err) {
+  if (err) {
+    console.error('Error connecting to the database:', err);
+  } else {
+    console.log('Connected successfully to the database');
+  }
+});
+
+export default con;
+>>>>>>> 031d062ebfcf9d5ae633c6853ae78870d81bf98f
