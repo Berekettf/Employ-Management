@@ -20,7 +20,7 @@ function App() {
           <Route path="/dashboard/employee" element={<Employee />}></Route>
           <Route path="/dashboard/category" element={<Catagory />}></Route>
           <Route path="/dashboard/profile" element={<Profile />}></Route>
-          <Route path="/dashboard/add_employ" element={<AddEmploy />}></Route>
+          <Route path="/dashboard/add_employee" element={<AddEmploy />}></Route>
           <Route
             path="/dashboard/add_category"
             element={<AddCategory />}
